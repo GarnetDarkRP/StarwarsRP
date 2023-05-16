@@ -1,0 +1,24 @@
+ASBaseAI.Responses = {
+    {
+        triggers = {
+            "Hello",
+            "~Hi"
+        },
+
+        responses = {
+            "Welcome back",
+        },
+
+        customCheck = function(ply,txt)
+            return true
+        end,
+
+        customAction = function(ply,txt)
+            return false
+        end,
+
+        canSee = function(ply,txt,activator)
+            return true
+        end,
+    }
+}
